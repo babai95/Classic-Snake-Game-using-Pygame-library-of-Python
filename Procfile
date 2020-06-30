@@ -1,1 +1,1 @@
-web: gunicorn snake_game
+web: gunicorn snake_game.py
