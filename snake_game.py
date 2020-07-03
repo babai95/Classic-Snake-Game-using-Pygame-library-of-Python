@@ -5,26 +5,26 @@ import os
 pygame.init()
 pygame.mixer.init()
 
-#In order to set a game window, do below, set_mode() takes a tuple (width,height)
-screen_width =  900
+# In order to set a game window, do below, set_mode() takes a tuple (width,height)
+screen_width = 900
 screen_height = 600
 game_window = pygame.display.set_mode((screen_width, screen_height))
 
-#Add game title
+# Add game title
 game_title = pygame.display.set_caption("Play Snakes with Sayan")
 
 back_img = pygame.image.load("background.jpg")
-back_img = pygame.transform.scale(back_img,(screen_width,screen_height)).convert_alpha()
+back_img = pygame.transform.scale(back_img, (screen_width, screen_height)).convert_alpha()
 
 welcome_img = pygame.image.load("welcome.jpg")
-welcome_img = pygame.transform.scale(welcome_img,(screen_width,screen_height)).convert_alpha()
+welcome_img = pygame.transform.scale(welcome_img, (screen_width, screen_height)).convert_alpha()
 
 over_img = pygame.image.load("game_over.jpg")
-over_img = pygame.transform.scale(over_img,(screen_width,screen_height)).convert_alpha()
+over_img = pygame.transform.scale(over_img, (screen_width, screen_height)).convert_alpha()
 
-#Below are the colours to be used in RGB format
-white = (255,255,255)
-black = (0,0,0)
+# Below are the colours to be used in RGB format
+white = (255, 255, 255)
+black = (0, 0, 0)
 red = (255, 0, 0)
 
 font = pygame.font.SysFont('Harrington', 35)
